@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+
+      let jsonString=  `{
+  "name": "Diya",
+  "age": 22,
+  "skills": ["JavaScript", "React"],
+  "isStudent": false,
+  "address": {
+    "city": "Mumbai",
+    "pincode": 400001
+  },
+  "graduationYear": null
+}`;
+
+let data=JSON.parse(jsonString) ;
+console.log(jsonString);
+
+console.log(data.skills[0]);
+        
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

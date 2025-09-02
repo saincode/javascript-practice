@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional</title>
+</head>
+<body>
+    <script>
+    let age = 28;
+
+    if(age >18){
+        console.log("eligible");
+    }else if(age<18){
+        console.log("not eligible");
+}
+
+//🧠 Problem 1: Even or Odd Checker
+let num = 17;
+
+if(num %2==0){
+    console.log("even");
+}else{
+    console.log("odd")
+}
+
+//🧠 Problem 2: Temperature Alert System
+let temp = 15;
+
+if(temp>=30){
+    console.log("It's hot, wear light clothes.");
+}else if(temp>=20){
+        console.log("Nice weather, dress comfortably.");
+}else {
+        console.log("It's cold, wear a jacket.");
+
+}
+
+//🧠 Problem 3: Simple Login Simulation
+
+let username = "admin";
+let password = "1434";
+
+if(username=="admin" && password=="1234"){
+console.log("Login successful");
+}else{
+    console.log("Unsuccessful");
+}
+
+
+//else if
+
+let num1 = 3;
+
+if(num1 ==1){
+console.log("Monday");
+}else if(num1 ==2){
+console.log("tuesday");
+}else if(num1 ==3){
+    console.log("wednesday");
+}else if(num1 ==4){
+console.log("thursday");
+}else{
+    console.log("invalid day");
+}
+
+//switch
+
+let day = 3;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  case 4:
+    console.log("Thursday");
+    break;
+  case 5:
+    console.log("Friday");
+    break;
+  case 6:
+    console.log("Saturday");
+    break;
+  case 7:
+    console.log("Sunday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+
+//another example
+
+let color ="green";
+
+switch(color){
+    case "blue":
+        console.log("color is blue");
+        break;
+    case "green":
+        console.log("color is green");
+        break;
+    case "red":
+        console.log("color is red");
+    default:
+    console.log("unknown color");
+
+}
+
+//1. Write a program that determines whether a given number is positive or negative.
+
+let number = 2;
+
+if(number%2==0){
+    console.log("number is positive");
+}
+
+//2. Write a program that checks if a number is even or odd.
+let number1 = 3;
+
+if(number1%2==0){
+    console.log("number is even");
+}else{
+    console.log("number is odd");
+}
+
+//3. Write a program to determine the greater of two numbers.
+
+let numb= 5;
+let numb1= 4;
+
+if(numb >numb1){
+    console.log("5 is greater than 4")
+}else{
+    console.log("4 is greater than 5")
+
+}
+
+//4. Write a program that transforms a numerical grade to a letter grade (e.g grade 10 should display “A”).
+let grade =10;
+
+if(grade == 10){
+console.log("A")
+}else if(grade ==9){
+console.log("B")
+
+}
+
+//5. Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+
+let age1 = 90;
+
+if(age1<=12){
+    console.log("Pay ticket price of 5");
+}else if(age1<=18){
+    console.log("Pay ticket price of 10");
+}else if(age1<=60){
+    console.log("Pay ticket price of 20");  
+}else{
+    console.log("15");
+}
+
+//6. Write a program that determines if a year is a leap year.
+
+let year = 1700;
+
+if(year %4===0){
+    if(year%100===0){
+        if(year%400===0){
+            console.log("its a leap year");
+        }else{
+            console.log("its not a leap year")
+        }
+    }else{
+        console.log("its  a leap year");
+    }
+}else{
+    console.log("Its not a leap year");
+}
+
+
+</script>
+</body>
+</html>

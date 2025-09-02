@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body>
+
+<script>
+//String datatype
+
+  let str1 = "Hello";      // double quotes
+  let str2 = 'World';      // single quotes
+  let str3 = `Welcome`;    // backticks (template literal)
+
+  console.log(str1);
+  console.log(`str2+${str1}`);
+  console.log(str3);
+
+  let firstName = "John";
+  let lastName = "Doe";
+  let fullName = firstName+" "+ lastName;
+  
+
+
+  console.log(fullName); // John Doe
+
+
+//Number datatype
+  let a = 10;         // Integer
+let b = 3.5;        // Decimal
+let sum = a + b;    // Addition
+let product = a * b;
+let division = a / b;
+let remainder = a % b;
+
+console.log("Sum:", sum);             // 13.5
+console.log("Product:", product);     // 35
+console.log("Division:", division);   // 2.857...
+console.log("Remainder:", remainder); // 3
+console.log("Type of a:", typeof a);  // number
+
+
+//Boolean
+
+let isRaining = true;
+let isSunny = false;
+
+console.log(isRaining);     // true
+console.log(typeof isSunny); // "boolean"
+
+let isLoggedIn = true;
+
+if (isLoggedIn) {
+  console.log("Welcome back!");
+} else {
+  console.log("Please log in.");
+}
+
+let isAdult = true;
+let hasID = false;
+
+if (isAdult || hasID) {
+  console.log("You may enter.");
+} else {
+  console.log("Access denied.");
+}
+
+//undefined
+let name;
+console.log(name);         // undefined
+console.log(typeof name);  // "undefined"
+
+function sayHello() {
+  console.log("Hello");
+}
+
+let result = sayHello();
+console.log(result); // undefined
+
+
+//null
+let cart = null;
+
+if (cart === null) {
+  console.log("Your cart is empty.");
+}
+
+
+//symbol
+let sym1 = Symbol("id");
+let sym2 = Symbol("id");
+
+console.log(sym1 === sym2); // false ✅ (even though both say "id")
+
+let s= 5;
+let s1 =5;
+
+console.log(s===s1);
+
+let s2 = Symbol(5);
+let s3 = Symbol(5);
+
+console.log(s2===s3);
+
+
+//bigInt
+let big1 = 123456789012345678901234567890n;
+let big2 = 10n;
+
+let result2 = big1 + big2;
+
+console.log(result2);        // 123456789012345678901234567900n
+console.log(typeof result2); // "bigint"
+
+
+let k = 26;     // This is a Number
+let l = 10n;    // This is a BigInt
+
+let c = 12345678901234567890;   // ❌ Number (and might lose precision)
+let d = 12345678901234567890n;  // ✅ BigInt (accurate)
+
+
+console.log(typeof 10n);
+
+
+
+
+</script>
+
+</body>
+</html>

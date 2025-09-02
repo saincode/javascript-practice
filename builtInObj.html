@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+
+
+//math
+let number = -4.7;
+
+console.log("Round:", Math.round(number));        // -5
+console.log("Floor:", Math.floor(number));        // -5
+console.log("Ceil:", Math.ceil(number));          // -4
+console.log("Abs:", Math.abs(number));            // 4.7
+console.log("Pow:", Math.pow(2, 3));              // 8
+console.log("Sqrt:", Math.sqrt(25));              // 5
+console.log("Min:", Math.min(3, 5, 2));            // 2
+console.log("Max:", Math.max(3, 5, 2));            // 5
+console.log("Random (0-100):", Math.floor(Math.random() * 101));  // 0 to 100
+
+let currentDate = new Date();
+
+console.log("years:",+currentDate.getFullYear());
+console.log("years:",+currentDate.getFullYear());
+console.log("years:",+currentDate.getMonth());
+console.log("years:",+currentDate.getHours());
+console.log("years:",+currentDate.getMinutes());
+console.log("years:",+currentDate.getSeconds());
+console.log("years:",+currentDate.getFullYear());
+
+//3. String Object Methods
+
+let sentence1="   Javascript is awesome";
+
+console.log("length:",sentence1.length);
+console.log("char at 5",sentence1.charAt(5));
+console.log("INDEX:",sentence1.indexOf("v"));
+console.log("slice (4,14):",sentence1.slice(4,8));
+console.log(sentence1.toUpperCase());
+console.log(sentence1.toLowerCase());
+console.log(sentence1.trim().split(" "));
+
+let sentence = "   JavaScript is Awesome!   ";
+
+console.log("Length:", sentence.length);  
+// ✅ Counts all characters including spaces
+
+console.log("Char at 5:", sentence.charAt(5));  
+// ✅ Returns character at index 5
+
+console.log("Index of 'is':", sentence.indexOf("is"));  
+// ✅ Finds first occurrence → index
+
+console.log("Slice (4, 14):", sentence.slice(4, 14));  
+// ✅ Cuts string from index 4 to 13
+
+console.log("To Upper:", sentence.toUpperCase());  
+// ✅ Converts to uppercase
+
+console.log("To Lower:", sentence.toLowerCase());  
+// ✅ Converts to lowercase
+
+console.log("Trimmed:", sentence.trim());  
+// ✅ Removes spaces from both sides
+
+console.log( "Split by space:", sentence.trim().split(" "));  
+// ✅ Converts string to array by splitting at space
+
+console.log("Replace:", sentence.replace("Awesome", "Powerful"));  
+// ✅ Replaces first match
+
+console.log("Includes 'Java':", sentence.includes("Java"));  
+// ✅ Checks if substring is present
+
+
+//arrays
+
+let fruit = ["apple", "banana", "cherry"];
+
+fruit.push("date");
+console.log(fruit);
+
+fruit.pop();
+console.log(fruit);
+
+fruit.unshift("orange");
+console.log(fruit);
+
+fruit.shift();
+console.log(fruit);
+
+
+
+fruit.splice(1,1,"blueberry");
+console.log(fruit);
+
+//objects
+
+let student={
+    name: "Husain",
+    age: 24,
+    course: "MCA"
+};
+
+console.log(Object.keys(student));
+console.log(Object.values(student));
+console.log(Object.entries(student));
+let
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

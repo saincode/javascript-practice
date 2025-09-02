@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional practice</title>
+</head>
+<body>
+    <script>
+        // 1. Write a program that determines whether a given number is positive or negative.
+
+        let num = 8;
+
+        if(num %2==0){
+            console.log(num+" is positive");
+        }
+
+        // 2. Write a program that checks if a number is even or odd.
+
+        let num1 = 8;
+
+        if(num1 %2==0){
+            console.log(num1+" is even");
+        }else{
+            console.log(num1+" is odd");
+        }
+
+        // 3. Write a program to determine the greater of two numbers.
+
+        let number = 2;
+
+        if (number > 2){
+            console.log( number+" number is greater than 2");
+        }
+
+        // 4. Write a program that transforms a numerical grade to a letter grade (e.g grade 10 should display “A”).
+
+        let grade = 8;
+
+        switch(grade){
+            case 10:
+            console.log("THE GRADE IS A");
+            break;
+            case 9:
+            console.log("THE GRADE IS   B");
+            break;
+            case 8:
+            console.log("THE GRADE IS   C");
+            break;
+            default: 
+            console.log("No grades find")
+        };
+
+        // 5. Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+
+        let age = 67;
+
+        if (age < 12){
+            console.log("ticeket price 5 rs");
+        }else if (age < 18){
+            console.log("ticket price 10rs");
+        }else if (age <60){
+            console.log(" ticekt price is 20rs")
+        }else{
+            console.log("ticket price is 15rs")
+        }
+
+        // 6. Write a program that determines if a year is a leap year.
+let year = 1700;
+
+if(year %4===0){
+    if(year%100===0){
+        if(year%400===0){
+            console.log("its a leap year");
+        }else{
+            console.log("its not a leap year")
+        }
+    }else{
+        console.log("its  a leap year");
+    }
+}else{
+    console.log("Its not a leap year");
+}
+
+
+//7. Write a program that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+
+let price = 120;
+
+if (price >= 100){
+    console.log(" discount is 20%");
+}else if (price >=50) {
+    console.log(" discount is 10%");
+}else{
+    console.log(" no discount");
+}
+
+// 8. Write a program that greets the user based on the time of day. Display good morning, good afternnon or good evening based on the time of day when you run the code.
+     let currentTime = new Date();
+     let currentHour = currentTime.getHours();
+
+     if (currentHour<12){
+        console.log("Good Morning");
+     }else if (currentHour<18){
+        console.log("Good afternoon");
+     }else{
+        console.log("good nigh");
+     }
+
+     // 9. Write a program that calculates the Body Mass Index (BMI) and categorizes it.
+
+     let height = 150;
+     let Weight = 50;
+     
+     let heightInMtr = height/100;
+     let BMI= Weight/(heightInMtr*heightInMtr);
+     console.log(BMI);
+
+     // 10. Write a simple number guessing game. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
+
+     let myNumber = 8;
+
+     let user = Number(prompt("Enter the number"));
+
+     if (user == myNumber){
+        console.log("your guess is correct");
+     }else if (user > myNumber){
+        console.log("your guess is higher");
+     }else {
+        console.log("your guess is lower");
+     };
+
+
+    </script>
+    
+</body>
+</html>

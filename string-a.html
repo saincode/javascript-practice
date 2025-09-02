@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String practice</title>
+</head>
+<body>
+    <script>
+        
+        let name = "Muhammad Husain";
+        console.log("name");
+
+        console.log(name.length);
+        console.log(name[2]);
+        console.log(name.charAt(3));
+
+        console.log(name.toUpperCase());
+        console.log(name.toLowerCase());
+
+        console.log(name.slice(1,6));
+        console.log(name.substring(1,6))
+
+        console.log(name.indexOf("h"));
+        console.log(name.lastIndexOf("a"));
+        console.log(name.includes("Muhammad"));
+        console.log(name.startsWith("Muhammad"));
+        console.log(name.endsWith("Husain"));
+
+        console.log(name.replace("Muhammad", "Thirthahalli"));
+        console.log(name.replaceAll("Muhammad Husain", "Thirthahalli"));
+        console.log(name);
+        
+
+        let car = "  suzuki";
+        console.log(car);
+        console.log(car.trim());
+        console.log(car.trimStart());
+        console.log(car.trimEnd());
+
+        let arr = name.split("");
+        console.log(name.split(" "));
+        console.log(name.split("a"));
+
+        console.log(arr.join(""));
+
+        
+
+        console.log(name.split().reverse().join());
+
+        let name1 = "Deepak Gowda";
+        console.log(name1);
+        let divide = name1.split(" ");
+        console.log(divide)
+        let reversed = divide.reverse();
+        console.log(reversed);
+        
+        let result = reversed.join(" ");
+        console.log(result)
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

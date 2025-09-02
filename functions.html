@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+</head>
+<body>
+    <script>
+
+
+        function carName(){
+            console.log("Suzuki");
+        }
+
+        carName();
+
+        function greetUser(){
+            console.log("Welcome to js track!")
+        }
+
+        greetUser();
+
+        //passing arguments
+
+        function greet(name){
+            console.log("name:"+ name);
+        }
+
+        greet("husain");
+
+    //🔹 Multiple Parameters:
+        function add(a, b) {
+        console.log(a + b);
+        }
+
+        add(3, 5); // Output: 8
+        
+    //❗ If you don’t pass an argument:
+    function greet1(name1) {
+    console.log("Hello, " + name1);
+    }
+
+    greet1(); // Output: Hello, undefined
+
+
+function add(a, b) {
+  return a + b; // Just prints the result
+}
+
+let result = add(5, 3); // This runs the function
+console.log("Result:", result);
+
+
+//Function Expression (Anonymous Functions)
+const greet3 = function() {
+  console.log("Hello there!");
+};
+
+greet3();
+
+
+//Example of Hoisting Difference:
+
+//Function Declaration (works):
+hello(); // ✅ works
+
+function hello() {
+  console.log("Hi!");
+}
+ // Function Expression (error):
+
+
+// 1. secondsToMinutes(seconds)
+function secondToMinutes(seconds){
+    return seconds/60;
+}
+
+console.log(secondToMinutes(120));
+
+//2. areaOfRectangle(length, width)
+function areaOfRect(length, width){
+    return length*width;
+}
+
+console.log(areaOfRect(2,4));
+
+//3. fahrenheitToCelsius(f)
+function fahrenheitToCelsius(f){
+    return  (f-32)*5/9;
+}
+
+console.log(fahrenheitToCelsius(98.6));
+
+//4. isEven(number)
+function isEven(numberr){
+    if(numberr%2==0){
+        return true;
+    }else{
+        return false
+    }
+}
+
+console.log(isEven(3));
+
+
+//greetUser(name)
+function greetUser1(name2){
+    console.log("Welcome,[name]!");
+}
+greetUser1();
+
+//6. calculateBMI(weight, height)
+function calculateBMI(weight, height){
+    return Math.round(weight/ (height*height));
+}
+
+console.log(calculateBMI(70,1.75));
+
+//🔢 1. isDivisibleBy(a, b)
+
+function isDivisibleBy(a,b){
+    if (a%b==0){
+        return true;
+    }else{
+        return false
+    }
+}
+
+console.log(isDivisibleBy(56,5));
+
+function timeConvert(minutes){
+    return minutes/60; 
+}
+
+console.log("hours:"+timeConvert(90)+"minutes");
+
+
+function add1(a, b) {
+  return a + b ; // Just prints the result
+}
+
+let result1 = add1(5, 3); // This runs the function
+console.log(result1);
+
+function add(a, b) {   // a, b are parameters
+  return a + b ;
+}
+
+console.log(add(2, 3)); // 2, 3 are arguments → Output: 5
+
+    </script>
+
+    
+    
+</body>
+</html>

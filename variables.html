@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <h1>Lorem 1lhlh</h1>
+    <script>
+        var name ='alice';
+        console.log(name);
+
+        name = "sain";
+        console.log(name);
+
+        var name="smith";
+        console.log(name);
+
+function test() {
+  var name1 = "divith";
+  console.log(name1); // ✅ Accessible here
+}
+test();
+<!-- console.log(name1); -->
+
+  
+
+
+if (true) {
+  var a = 10;
+  let b = 20;
+}
+
+console.log(a); // ✅ Output: 10
+//console.log(b); // ❌ ReferenceError: b is not defined
+
+if (true) {
+  var color = "Red";
+}
+console.log(color); // ✅ Output: Red
+ 
+//var is NOT accessible outside functions//
+function greet() {
+  var message = "Hello";
+  console.log(message); // ✅ Output: Hello
+}
+
+greet();
+console.log(message); // ❌ Error: message is not defined
+
+//var is accessible outside the block.//
+if (true) {
+  var message = "Helloman";
+  console.log(message); // ✅ Output: Hello
+}
+
+console.log(message);
+
+//let 
+let car = "suzuki";
+   console.log(car); 
+
+car = "kia";
+console.log(car);
+
+// ✅ Declared outside of any block/function
+let globalVar2 = "i drive car";
+function show() {
+  let globalVar = "I am global"; 
+  console.log(globalVar); // ✅ Accessible here
+}
+
+show();
+
+if (true) {
+    let globalVar1 = "I am sain"; 
+
+  console.log(globalVar1); // ✅ Accessible here too
+}
+
+console.log(globalVar2); 
+
+// ✅ Also works here
+
+
+//const
+
+const num = 123;
+console.log(num);
+
+//num= 234;
+console.log(num);//
+
+
+//hoist
+var m=5;       // hoisted//
+console.log(m); // undefined
+
+
+/////practice practice practice practice practice
+
+var name4 = "husain";
+
+console.log(name4);
+name4="Muhammad Husain";
+console.log(name4);
+
+var name4= "Akash";
+console.log(name4);
+
+function carName(){
+  var car1 = "maruti";
+    console.log(car1);
+};
+
+carName();
+//console.log(car1);
+
+
+function watchName()
+{
+  if(true){
+    var watch ="casio";
+    console.log(watch);
+  }
+  console.log(watch);
+};
+watchName();
+//console.log(watch);
+
+
+///////let
+let bike = "pulsar";
+console.log(bike);
+
+bike = "duke";
+console.log(bike);
+
+//let bike = "KTM";
+console.log(bike);
+
+function bikeName(){
+  let scooty = "dio";
+  console.log(scooty);
+}
+
+ bikeName();
+
+ 
+ function cityName(){
+  if(true){
+  var city = "bangalore";
+  console.log(city);
+  }
+  console.log(city);
+ }
+
+ cityName()
+
+ function numberValue(){
+  if(true){
+ var number = 7;
+console.log(number);
+  }
+  console.log(number);
+}
+numberValue();
+
+//hoisting
+console.log(college);
+var college = "kristu jayanti college";
+college = 'dvs';
+console.log(college);
+
+
+
+let college1 = "DVS";
+console.log(college1);
+
+
+let globalName = "Diya";
+
+console.log(globalName);
+
+function gvariable(){
+  if (true){
+    console.log(globalName);
+  }
+  console.log(globalName);
+}
+
+gvariable();
+
+function sayHello() {
+  console.log("Hello");
+}
+
+sayHello();
+let result = sayHello();
+console.log(result);
+
+
+//let result = sayHello();
+//console.log(result); // undefined
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
