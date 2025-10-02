@@ -21,6 +21,18 @@
      student.greet();
         console.log(student.name);
         console.log(student["age"]);
+        student.age = 23;
+        console.log(student);
+        delete student.course;
+        console.log(student);
+        student.course = "mca";
+        console.log(student);
+
+        for (let key in student){
+            console.log(key +":"+ student[key]);
+        }
+
+       
 
         let college = new Object({
             name: "Manvith",
@@ -31,6 +43,8 @@
         console.log(college["name"]);
         console.log(college["hair Color"]);
 
+
+
         function person(name,age,city){
             this.name = name;
             this.age = age;
@@ -40,6 +54,33 @@
         let p1 = new person("husain", 22, "bangalore");
 
         console.log(p1.name);
+
+
+        let employee ={
+            emp_name: "deepu",
+            empId: 101,
+            dept:{
+                deptName: "development",
+                floor: 5
+            },
+            greet: function(){
+                console.log("hello "+ this.emp_name);
+            },
+        };
+
+        console.log(employee.emp_name);
+        console.log(employee["empId"]);
+
+        console.log(employee.dept.deptName);
+        employee.greet();
+
+        employee.emp1_name = "anitha";
+        console.log(employee);
+
+        for (let key in employee.dept){
+            console.log(key+ ":" + employee.dept[key]);
+        };
+
     </script>
 </body>
 </html>
