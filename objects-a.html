@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects a</title>
+</head>
+<body>
+    <h1>Objects practice</h1>
+
+    <script>
+        let student = {
+            name: "Husain",
+            age:22,
+            course: "MCA",
+            greet: function(){
+                console.log("Hello:"+ this.name);
+            }
+        };
+
+     student.greet();
+        console.log(student.name);
+        console.log(student["age"]);
+
+        let college = new Object({
+            name: "Manvith",
+            "hair Color": "red",
+        });
+
+        console.log(college);
+        console.log(college["name"]);
+        console.log(college["hair Color"]);
+
+        function person(name,age,city){
+            this.name = name;
+            this.age = age;
+            this.city = city
+        };
+
+        let p1 = new person("husain", 22, "bangalore");
+
+        console.log(p1.name);
+    </script>
+</body>
+</html>
