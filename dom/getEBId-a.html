@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Concept</title>
+    <style>
+         body {
+      text-align: center;
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+    }
+    #heading {
+      margin-bottom: 20px;
+    }
+    #btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <h1 id="heading"> Welcome to color changer</h1>
+    <button id="btn" onclick="changeBgClr()">click me</button>
+
+    <script>
+        function changeBgClr(){
+            let heading = document.getElementById("heading");
+            let btn = document.getElementById("btn");
+
+            heading.textContent = "Text changed";
+            heading.style.color = "red";
+
+            btn.innerHTML = "clicked";
+        }
+
+    </script>
+</body>
+</html>

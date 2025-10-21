@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>This is parajs</p>
+    <p>kagdkadg dmbcdkjc</p>
+    <p>kdgfkadf dkfjaskhd</p>
+
+    <button onclick="highlight()">highlightall</button>
+
+    <script>
+        function highlight(){
+            let paras = document.getElementsByTagName("p");
+            for(let i = 0; i<paras.length; i++){
+                paras[i].style.color = "red";
+                paras[i].style.fontSize = "16px";
+            }
+        }
+    </script>
+</body>
+</html>

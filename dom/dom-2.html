@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini proj</title>
+</head>
+<body>
+    <h1 id="heading">Hello</h1>
+    <p id="paragraph"> World is big</p>
+
+    <button id="changeTxtBtn">Change text color</button>
+    <button id="changeClrBtn">change color button</button>
+    <button id="changeHtmlBtn">change html</button>
+
+    <script>
+
+        //select elements
+        let heading = document.getElementById("heading");
+        let para = document.getElementById("paragraph");
+        let textBtn = document.getElementById("changeTxtBtn");
+        let clrBtn = document.getElementById("changeClrBtn");
+        let htmlBtn = document.getElementById("changeHtmlBtn");
+
+        //change text when buttonclicked
+        textBtn.onclick = function (){
+            para.textContent = "World is very big";
+        };
+
+        clrBtn.onclick = function(){
+            para.style.color =" green";
+            para.style.fontSize = "45px";
+        };
+
+        htmlBtn.onclick = function(){
+            htmlBtn.innerHTML = "<b>NOTHING IN THIS PAGE</b>";
+            htmlBtn.style.color = "red";
+        };
+        
+
+
+
+
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Concept</title>
+</head>
+<body>
+    <h1 id="title">Hello</h1>
+
+    <h1 id="heading">Welcome</h1>
+    <p>This is DOM practice</p>
+
+    <h2 id="greeting">Hello Husain</h2>
+
+    <h1 id="title-2">Learning DOM access</h1>
+    <button id="btn">Change title</button>
+
+    
+
+
+    
+<script>    
+        document.getElementById("title").textContent = "Hi JavaScript!";
+
+        console.log(document);
+        console.log(document.body);
+        console.log(document.title);
+        console.log(document.URL);
+        console.log(document.getElementById("heading"));
+
+        let element = document.getElementById("greeting");
+        element.textContent = "welcome to the js";
+        element.style.color = "red";
+
+        const title = document.getElementById("title-2");
+        const button = document.getElementById("btn");
+
+        button.addEventListener("click", function(){
+            title.textContent = "Text changes succesfully";
+        });
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
