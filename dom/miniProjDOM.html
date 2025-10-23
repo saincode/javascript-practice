@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini project dom</title>
+</head>
+<body>
+    <div class="profile-card">
+        <img id="profileImg" src="husain profile.jpg" alt="profile-image" width="150">
+        <h2>Husain</h2>
+        <p class="bio">This is my bio</p>
+
+        <button id="changeImagebtn">Change Image</button>
+        <button id="updateBiobtn">Update bio</button>
+        <button id="removeAlbtn">Remove Alt</button>
+    </div>
+
+    <script>
+        let img = document.getElementById('profileImg');
+        let bio = document.getElementsByClassName('bio');
+
+        document.getElementById("changeImgbtn").addEventListener("click",function(){
+            let currentSrc = img.getAttribute("src");
+            if(currentSrc === "husain profile.jpg"){
+                img.setAttribute()
+            }
+        })
+
+    </script>
+    
+</body>
+</html>

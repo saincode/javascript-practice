@@ -1,0 +1,16 @@
+<img id="img" src="image1.png" alt="old image">
+
+<script>
+    let img = document.getElementById("img");
+    img.setAttribute("width","200");
+    img.setAttribute("height","500");
+    img.setAttribute("alt","newimage");
+
+    let imagevalue = img.getAttribute("src");
+    console.log(imagevalue);
+
+    let remove = img.removeAttribute("alt");
+
+
+
+</script>

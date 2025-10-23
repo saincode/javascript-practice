@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulate</title>
+</head>
+<body>
+    <h1 id="title"> Hello world</h1>
+    <button onclick="clickme()">Click</button>
+
+     <h2 id="msg">Hello World!</h2>
+
+     <div id="example">
+  Hi <span style="display: none;">there</span> Friend!
+</div>
+
+<div id="message">
+  Hello <span style="display: none;">Invisible</span> Friend!
+</div>
+
+
+
+    <script>
+        function clickme(){
+            let heading = document.getElementById("title");
+            heading.textContent = "hello javascript";
+        }
+
+        let text = document.getElementById("msg").innerText;
+  console.log(text);
+
+  let content = document.getElementById("example").innerText;
+  console.log(content);
+
+
+        let text1 = document.getElementById("message").innerText;
+  console.log(text1);
+
+
+
+
+
+    </script>
+</body>
+</html>
